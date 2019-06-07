@@ -56,9 +56,13 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\MatchSettings.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerMotor.cs" />
      <Compile Include="Assets\Scripts\PlayerSetup.cs" />
+     <Compile Include="Assets\Scripts\PlayerWeapon.cs" />
+     <Compile Include="Assets\Scripts\WeaponGraphics.cs" />
+     <Compile Include="Assets\Scripts\WeaponManager.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/WorkSpace/unity-workspace/Ned MMORPG/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

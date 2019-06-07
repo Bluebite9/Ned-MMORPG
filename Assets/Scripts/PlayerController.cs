@@ -2,7 +2,6 @@
 
 [RequireComponent(typeof(ConfigurableJoint))]
 [RequireComponent(typeof(PlayerMotor))]
-[RequireComponent(typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
 
@@ -21,7 +20,6 @@ public class PlayerController : MonoBehaviour
     private float jointMaxForce = 40f;
 
     //component cashing
-    private Animator animator;
     private PlayerMotor motor;
     private ConfigurableJoint joint;
 
@@ -29,7 +27,6 @@ public class PlayerController : MonoBehaviour
     {
         motor = GetComponent<PlayerMotor>();
         joint = GetComponent<ConfigurableJoint>();
-        animator = GetComponent<Animator>();
 
         SetJointSettings(jointSpring);
     }
@@ -61,9 +58,6 @@ public class PlayerController : MonoBehaviour
         Vector3 _movVertical = transform.forward * _zMov;
 
         Vector3 _velocity = (_movHorizontal + _movVertical) * speed;
-
-        //animate movement
-        animator.SetFloat("ForwardVelocity", _zMov);
 
         motor.Move(_velocity);
 

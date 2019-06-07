@@ -17,8 +17,8 @@ TagManager:
   - CollidableEnvironment
   - LocalPlayer
   - RemotePlayer
-  - 
-  - 
+  - Weapon
+  - DontDraw
   - 
   - 
   - 
